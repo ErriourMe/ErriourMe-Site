@@ -1,0 +1,66 @@
+/* Bootstrap' and another variables */
+
+$theme-colors: (
+  "primary": #124fb1,
+  "danger": #eb3c66,
+  "success": #1eab6a,
+  "interface": #343434,
+  "legacy": #955563,
+  "mute": #a8a6a0,
+);
+
+$body-color: #fff;
+
+$tooltip-arrow-color: #080b17;
+$tooltip-bg: #080b17;
+
+$link-color: #fff;
+
+$breadcrumb-divider: quote("→");
+$breadcrumb-padding-y: 0;
+$breadcrumb-padding-x: 0;
+$breadcrumb-bg: transparent;
+$breadcrumb-margin-bottom: 0;
+
+$badge-padding-y: 8px;
+$badge-padding-x: 14px;
+$badge-pill-padding-x: 14px;
+
+$btn-focus-width: 0;
+
+$nav-tabs-border-radius: 0;
+
+$nav-tabs-link-hover-border-color: transparent;
+
+$nav-tabs-border-color: #2f2f2f;
+
+$nav-tabs-link-active-bg: #2f2f2f;
+$nav-tabs-link-active-border-color: #2f2f2f;
+$nav-tabs-link-active-color: #fff;
+
+$badge-focus-width: 0;
+
+$h3-font-size: 1.5rem;
+
+$btn-font-weight: 600;
+$btn-border-radius: 2px;
+$btn-font-family: 'Noto Sans', sans-serif;
+$btn-font-size: 0.8rem;
+
+$grid-breakpoints: (
+	zs: 0,
+	xs: 1px,
+	sm: 576px,
+	md: 768px,
+	lg: 992px,
+	xl: 1200px,
+	xxl: 1700px
+);
+
+$container-max-widths: (
+	sm: 576px,
+	md: 768px,
+	lg: 992px,
+	xl: 1200px,
+	xxl: 1600px
+);

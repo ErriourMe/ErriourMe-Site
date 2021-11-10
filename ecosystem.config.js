@@ -1,7 +1,7 @@
 module.exports = {
   apps: [
     {
-      name: 'opt', // TODO: Rename for identification
+      name: 'erriourme', // TODO: Rename for identification
       exec_mode: 'cluster',
       port: 7003,
       script: './node_modules/nuxt/bin/nuxt.js',

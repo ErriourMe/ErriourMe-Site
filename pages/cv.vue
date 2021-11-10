@@ -300,6 +300,7 @@
               <a class="badge badge-pill badge-primary" href="#">ClickUp</a>
               <a class="badge badge-pill badge-primary" href="#">Trello</a>
               <a class="badge badge-pill badge-primary" href="#">Postman</a>
+              <a class="badge badge-pill badge-primary" href="#">Icecast 2</a>
               <a
                 v-b-tooltip
                 class="badge badge-pill badge-primary"

@@ -8,12 +8,13 @@ networks:
 
 # Workflow
 services:
-  nuxt_main:
+  nuxt:
     build:
       context: .
       dockerfile: ./docker/nuxt/Dockerfile
     # volumes:
     #   - ./src:/var/www/html:delegated
+    container_name: ${COMPOSE_PROJECT_NAME}_nuxt
     restart: always
     ports:
       - "5001:5001"

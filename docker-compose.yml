@@ -16,7 +16,7 @@ services:
     #   - ./src:/var/www/html:delegated
     restart: always
     ports:
-      - "4002:4002"
+      - "5001:5001"
     command:
       "npm run start"
     networks:

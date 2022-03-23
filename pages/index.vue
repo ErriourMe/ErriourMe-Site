@@ -1,62 +1,90 @@
 <template>
   <div
-    class="
-      main-page
-      d-flex
-      flex-column
-      align-items-center
-      justify-content-center
-    "
+    class="main-page d-flex flex-column align-items-center justify-content-center"
   >
     <div class="avatar main-page__avatar">
       <img src="/static/images/avatar.webp" alt="Erriour's avatar" />
     </div>
-    <div class="main-page__name">Vladimir Gonchar</div>
+    <div class="main-page__name">{{ $t('name') }}</div>
     <div class="main-page__status">
       Web dev (PHP, JS, Laravel, Vue/Nuxt), UI/UX
     </div>
     <div class="main-page__socials">
-      <a title="I'm in VK" href="https://vk.com/erriour" target="_blank">
-        <SvgIcon name="vk" />
-      </a>
       <a
-        title="I'm in Instagram"
-        href="https://instagram.com/erriour_ru"
+        v-b-tooltip
+        :title="`${$t('parts.im_in')} Telegram`"
+        href="https://t.me/erriour"
         target="_blank"
       >
-        <SvgIcon name="instagram" />
+        <SvgIcon name="telegram" />
       </a>
       <a
-        title="I'm in StackOverflow"
-        href="https://github.com/ErriourRU"
+        v-b-tooltip
+        :title="`${$t('parts.im_in')} Github`"
+        href="https://github.com/ErriourMe"
         target="_blank"
       >
         <SvgIcon name="github" />
       </a>
+      <!-- <a
+        :title="`${$t('parts.im_in')} Instagram`"
+        href="https://instagram.com/erriour_ru"
+        target="_blank"
+      >
+        <SvgIcon name="instagram" />
+      </a> -->
       <a
-        title="I'm in StackOverflow"
+        v-b-tooltip
+        :title="`${$t('parts.im_in')} StackOverflow`"
         href="https://ru.stackoverflow.com/users/300171"
         target="_blank"
       >
         <SvgIcon name="stackoverflow" />
       </a>
       <a
-        title="I'm in LinkedIn"
+        v-b-tooltip
+        :title="`${$t('parts.im_in')} LinkedIn`"
         href="https://www.linkedin.com/in/vladimir-gonchar-433627161/"
         target="_blank"
       >
         <SvgIcon name="linkedin" class="linkedin-icon" />
       </a>
       <a
-        title="I'm in Behance"
+        v-b-tooltip
+        :title="`${$t('parts.im_in')} Behance`"
         href="https://www.behance.net/erriour"
         target="_blank"
       >
         <SvgIcon name="behance" />
       </a>
+      <a
+        v-b-tooltip
+        :title="`${$t('parts.im_in')} VK`"
+        href="https://vk.com/erriour"
+        target="_blank"
+      >
+        <SvgIcon name="vk" />
+      </a>
     </div>
   </div>
 </template>
+
+<script>
+export default {
+  head() {
+    return {
+      title: this.$t('pages.index.meta.title'),
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: this.$t('pages.index.meta.description'),
+        },
+      ],
+    }
+  },
+}
+</script>
 
 <style lang="scss">
 .main-page {

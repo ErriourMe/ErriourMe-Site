@@ -57,7 +57,7 @@ ul, li {
     margin: 0;
 }
 
-ul:not(.nav-item) {
+ul:not(.nav-item):not(.dropdown-menu) {
   margin-top: 12px;
 
   li:not(.nav-item) {
@@ -114,5 +114,36 @@ ul:not(.nav-item) {
     align-items: center;
     margin-left: 5px;
     opacity: 0.8;
+  }
+}
+
+@media print {
+  body {
+    background: #fff;
+    color: #222 !important;
+  }
+
+  a {
+    color: #222;
+    text-decoration: none !important;
+
+    &[href]:after {
+      content: " (" attr(href) ")";
+    }
+  }
+
+  .help {
+    font-size: 0.9rem;
+    color: #272624;
+    background: #cfcfcf;
+  }
+
+  .badge {
+    font-size: 1.1rem;
+    border: none !important;
+  }
+
+  .help-icon {
+    display: none;
   }
 }

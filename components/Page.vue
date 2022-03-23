@@ -3,10 +3,7 @@
     <div class="container">
       <div class="page__header">
         <b-breadcrumb
-          class="
-            header__breadcrumbs
-            justify-content-center justify-content-md-start
-          "
+          class="header__breadcrumbs justify-content-center justify-content-md-start"
           :items="breadcrumbs"
         />
         <div class="row">
@@ -14,15 +11,9 @@
             <h1>{{ title }}</h1>
           </div>
           <div
-            class="
-              col-12 col-md-4
-              d-flex
-              align-items-center
-              justify-content-center justify-content-md-end
-              mt-3 mt-md-0
-            "
+            class="col-12 col-md-4 d-flex align-items-center justify-content-center justify-content-md-end mt-3 mt-md-0"
           >
-            <NuxtLink to="/" class="btn btn-interface">На главную</NuxtLink>
+            <slot name="actions" />
           </div>
         </div>
       </div>

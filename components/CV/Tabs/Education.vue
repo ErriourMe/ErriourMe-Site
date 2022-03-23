@@ -1,37 +1,34 @@
 <template>
   <Timeline>
-    <TimelineItem>
-      <template #title>Веб-разработка (Программная инженерия)</template>
-      <template #subtitle>2021 - н.в, ИТМО, Санкт-Петербург</template>
-      <template #default></template>
-    </TimelineItem>
-
-    <TimelineItem>
-      <template #title>
-        Мобильные и сетевые технологии (Прикладная информатика)
+    <TimelineItem
+      v-for="(education, i) in educations"
+      :key="`cv-education-${i}`"
+    >
+      <template #title>{{ education.title }}</template>
+      <template #subtitle>
+        {{ education.dates }}, {{ education.university }},
+        {{ education.place }}
       </template>
-      <template #subtitle>2020 - 2021, ИТМО, Санкт-Петербург</template>
-      <template #default>Переведен на специальность "Веб-разработка"</template>
-    </TimelineItem>
-
-    <TimelineItem>
-      <template #title>
-        Автоматизация бизнес-процессов (Прикладная информатика)
-      </template>
-      <template #subtitle>2016 - 2020, ВГУЭС, Владивосток</template>
       <template #default>
-        <!-- Красный диплом. ВКР: "Разработка мобильного приложения «Личный
-                  кабинет студента» на основе веб-технологий" -->
+        {{ education.description }}
       </template>
     </TimelineItem>
   </Timeline>
 </template>
 
 <script>
+import ruEdu from '~/data/ru/edu'
+import enEdu from '~/data/en/edu'
+
 export default {
   components: {
     Timeline: () => import('~/components/CV/Timeline'),
     TimelineItem: () => import('~/components/CV/TimelineItem'),
+  },
+  data() {
+    return {
+      educations: this.$i18n.locale === 'ru' ? ruEdu : enEdu,
+    }
   },
 }
 </script>

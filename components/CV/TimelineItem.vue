@@ -26,6 +26,9 @@
     height: 10px;
     border-radius: 50%;
     background: #fff;
+    @media print {
+      background: #000;
+    }
     display: block;
     position: absolute;
     left: -41px;

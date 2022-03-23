@@ -1,5 +1,5 @@
 import en from '../lang/en/index.js'
-import ru from '../lang/ru/index.js'
+import ru from '../lang/ru/pages/index.js'
 
 export const langConfig = {
   pluralizationRules: {
@@ -30,11 +30,11 @@ export const langConfig = {
       name: 'Русский',
       iso: 'ru-RU',
     },
-    // {
-    //   code: 'en',
-    //   name: 'English',
-    //   iso: 'en-US',
-    // },
+    {
+      code: 'en',
+      name: 'English',
+      iso: 'en-US',
+    },
   ],
   seo: true,
   // strategy: 'no_prefix',

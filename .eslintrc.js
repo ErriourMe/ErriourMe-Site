@@ -20,5 +20,6 @@ module.exports = {
     'vue/no-v-html': 'off',
     'vue/script-setup-uses-vars': 'off',
     'no-console': 'off',
+    'vue/no-v-for-template-key-on-child': 'off',
   },
 }

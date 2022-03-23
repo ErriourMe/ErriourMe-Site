@@ -8,10 +8,6 @@ import { yandexMetrikaConfig } from './config/yandexMetrikaConfig'
 // const env = require('dotenv').config()?.parsed
 
 export default {
-  server: {
-    port: 5001,
-  },
-
   render: {
     resourceHints: false,
     bundleRenderer: {
@@ -86,19 +82,6 @@ export default {
   },
 
   loading: { color: '#0095ff', throttle: 0 },
-
-  /*
-  // Fallback (for example, for categories or news by categories)
-  router: {
-    extendRoutes(routes, resolve) {
-      routes.push({
-        name: 'fallback',
-        path: '*',
-        component: resolve(__dirname, 'pages/_fallback.vue'),
-      })
-    },
-  },
-  */
 
   build: {
     analyze: false, // True to get packages diagram

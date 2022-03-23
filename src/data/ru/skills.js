@@ -26,6 +26,10 @@ export default [
       },
       {
         color: 'primary',
+        title: 'БЭМ',
+      },
+      {
+        color: 'primary',
         title: 'Адаптивная верстка',
       },
       {
@@ -35,6 +39,10 @@ export default [
       {
         color: 'primary',
         title: 'Vue',
+      },
+      {
+        color: 'primary',
+        title: 'Nuxt.js',
       },
       {
         color: 'primary',
